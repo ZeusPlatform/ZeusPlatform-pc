@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZeusPlatform</title>
+</head>
+<body>
+<h1>Hello Zeus Platform!</h1>
+<h1>Welcome to the world of Zeus Platform! </h1>
+
+<webview id="foo" src="https://www.github.com/" style="display:inline-block; width:640px; height:480px"></webview>
+
+<script>
+    onload = function() {
+        var webview = document.getElementById("foo");
+        var indicator = document.querySelector(".indicator");
+
+        var loadstart = function() {
+            indicator.innerText = "loading...";
+        }
+        var loadstop = function() {
+            indicator.innerText = "";
+        }
+        webview.addEventListener("did-start-loading", loadstart);
+        webview.addEventListener("did-stop-loading", loadstop);
+    }
+</script>
+</body>
+</html>

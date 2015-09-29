@@ -1,7 +1,7 @@
 {
   "name": "ZeusPlatform-pc",
   "version": "0.0.0",
-  "main": "src/main.js",
+  "main": "app/main.js",
   "scripts": {
     "archive": "node archive/archive.js"
   },
