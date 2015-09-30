@@ -39,11 +39,12 @@ app.on('ready', function() {
     mainWindow = new BrowserWindow({width: 800, height: 600});
 
     // and load the index.html of the app.
-    mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    //mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    mainWindow.loadUrl('file://' + __dirname + '/zeus.html');
     //mainWindow.loadUrl('https://github.com');
 
     // Open the DevTools.
-    //mainWindow.openDevTools();
+    mainWindow.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function() {

@@ -1,0 +1,54 @@
+
+
+#leftFuctionSection {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 170px;
+}
+
+.funcSectionSplit {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+    cursor: col-resize;
+}
+
+#funcSectionSplitter {
+    left: 170px;
+}
+
+#rightFuctionSection {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 170px;
+    border-left: 1px solid #ebeff2;
+}
+
+#chatListSection {
+    width: 250px;
+    border-right: 1px solid #ebeff2;
+}
+
+
+#chatSectionSplitter {
+    left: 250px;
+}
+
+#chatWindowSection {
+    position: absolute;
+    /*bottom: 0;*/
+    left: 255px;
+    right: 0;
+    padding-left: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background-color: #ffffff;
+}
+
